@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
+using WPF_Application_Project.ViewModel;
 
 namespace WPF_Application_Project
 {
@@ -13,5 +8,14 @@ namespace WPF_Application_Project
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            var app = new View.MainWindow();
+            var context = new MainWindowViewModel();
+            app.DataContext = context;
+            app.Show();
+        }
     }
 }
