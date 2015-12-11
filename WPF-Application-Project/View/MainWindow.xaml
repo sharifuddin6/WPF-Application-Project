@@ -12,6 +12,12 @@
         <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
             <view:HomeView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:ProductViewModel}">
+            <view:ProductView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:BasketViewModel}">
+            <view:BasketView />
+        </DataTemplate>
     </Window.Resources>
 
     <DockPanel>

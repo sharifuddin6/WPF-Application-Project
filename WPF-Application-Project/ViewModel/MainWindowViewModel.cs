@@ -21,6 +21,8 @@ namespace WPF_Application_Project.ViewModel
         {
             // Add available pages
             PageViewModels.Add(new HomeViewModel());
+            PageViewModels.Add(new ProductViewModel());
+            PageViewModels.Add(new BasketViewModel());
 
             // Set starting page
             CurrentPageViewModel = PageViewModels[0];
