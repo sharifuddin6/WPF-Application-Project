@@ -1,5 +1,4 @@
-﻿
-using WPF_Application_Project.Resources;
+﻿using WPF_Application_Project.Resources;
 
 namespace WPF_Application_Project.ViewModel
 {
@@ -7,4 +6,5 @@ namespace WPF_Application_Project.ViewModel
     {
         public string Name => "Product Page";
     }
+
 }
